@@ -1,4 +1,4 @@
 # SliderTemplate
 Some simple example of slider images
 
-[Live version] (https://dmitryshabanov.github.io/SliderTemplate/)
+[Live version] (https://dmitryshabanov.github.io/Slider/)

@@ -1,4 +1,4 @@
-.slider {
+#slider {
   position: relative;
 
   height: 300px;
@@ -25,7 +25,7 @@
   background: no-repeat center;
   background-size: cover;
 
-  transition: all 1.5s;
+  transition: all .75s;
 }
 
 .button {
@@ -51,7 +51,7 @@
   right: 20px;
 }
 
-.radio-buttons {
+.radio {
   position: absolute;
 
   bottom: 15px;
@@ -63,7 +63,6 @@
 
 .radio-item {
   display: inline-block;
-  box-sizing: border-box;
 
   width: 10px;
   height: 10px;
