@@ -1,8 +1,10 @@
-let slider = document.getElementById('slider');
-let left = document.getElementById('left-button');
-let right = document.getElementById('right-button');
-let slides = document.getElementsByClassName('slider-item');
-let radioItems = document.getElementsByClassName('radio-item');
+const slider = document.getElementById('slider');
+const left = document.getElementById('left-button');
+const right = document.getElementById('right-button');
+const leftShadow = document.getElementsByClassName('shadow-left');
+const rightShadow = document.getElementsByClassName('shadow-right');
+const slides = document.getElementsByClassName('slider-item');
+const radioItems = document.getElementsByClassName('radio-item');
 
 let slideCounter = 0;
 
@@ -70,11 +72,11 @@ function checkRadioItems() {
 }
 
 for (var i = 0; i < radioItems.length; i++) {
-  radioItems[i].onclick = checkRadioItems;
+  radioItems[i].addEventListener('click', checkRadioItems);
 }
 
-left.onclick = leftShift;
-right.onclick = rightShift;
+leftShadow[0].addEventListener('click', leftShift);
+rightShadow[0].addEventListener('click', rightShift);
 
 let timer = setInterval(rightShift, 3000);
 
