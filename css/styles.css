@@ -14,7 +14,23 @@
   background-size: cover;
 }
 
+#slider:before {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  content: '';
+
+  background-color: #000;
+  opacity: .2;
+}
+
 .slider-item {
+  z-index: -1;
   position: absolute;
 
   left: 0;
@@ -45,7 +61,7 @@
 
   content: '';
 
-  background-color: #666;
+  background-color: #000;
   opacity: 0;
 
   transition: all .25s;

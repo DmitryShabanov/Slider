@@ -9,11 +9,10 @@ const radioItems = document.getElementsByClassName('radio-item');
 let slideCounter = 0;
 
 function initSlides() {
-  radioItems[slideCounter].style.backgroundColor = '#fff';
-  radioItems[slideCounter].style.opacity = 1;
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.left = `${100 * i}%`;
   }
+  shift(slideCounter);
 }
 
 function shift(index) {
